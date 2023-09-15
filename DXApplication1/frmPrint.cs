@@ -24,7 +24,7 @@ namespace DXApplication1
             InvoiceReport report = new InvoiceReport();
             foreach (DevExpress.XtraReports.Parameters.Parameter p in report.Parameters)
                 p.Visible = false;
-            report.InitData(order.OrderID.ToString(), order.OrderDate, order.ContactName, order.Address, order.PostalCode, order.City, order.Phone, data);
+            report.InitData(order.OrderID.ToString(), order.OrderDate, order.ContactName, order.Address, order.PostalCode, order.City, order.Country, order.Phone, data);
             documentViewer1.DocumentSource = report;
             report.CreateDocument();
         }

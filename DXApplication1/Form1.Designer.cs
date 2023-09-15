@@ -37,13 +37,6 @@
             gridControl1 = new DevExpress.XtraGrid.GridControl();
             ordersBindingSource = new System.Windows.Forms.BindingSource(components);
             gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            colOrderID = new DevExpress.XtraGrid.Columns.GridColumn();
-            colContactName = new DevExpress.XtraGrid.Columns.GridColumn();
-            colAddress = new DevExpress.XtraGrid.Columns.GridColumn();
-            colPostalCode = new DevExpress.XtraGrid.Columns.GridColumn();
-            colCity = new DevExpress.XtraGrid.Columns.GridColumn();
-            colPhone = new DevExpress.XtraGrid.Columns.GridColumn();
-            colOrderDate = new DevExpress.XtraGrid.Columns.GridColumn();
             btnPrint = new DevExpress.XtraEditors.SimpleButton();
             btnLoad = new DevExpress.XtraEditors.SimpleButton();
             dtFromDate = new DevExpress.XtraEditors.DateEdit();
@@ -55,6 +48,14 @@
             emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             dateEdit2 = new DevExpress.XtraLayout.LayoutControlItem();
             emptySpaceItem2 = new DevExpress.XtraLayout.EmptySpaceItem();
+            colOrderID = new DevExpress.XtraGrid.Columns.GridColumn();
+            colContactName = new DevExpress.XtraGrid.Columns.GridColumn();
+            colAddress = new DevExpress.XtraGrid.Columns.GridColumn();
+            colPostalCode = new DevExpress.XtraGrid.Columns.GridColumn();
+            colCity = new DevExpress.XtraGrid.Columns.GridColumn();
+            colCountry = new DevExpress.XtraGrid.Columns.GridColumn();
+            colPhone = new DevExpress.XtraGrid.Columns.GridColumn();
+            colOrderDate = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)layoutControl1).BeginInit();
@@ -123,58 +124,9 @@
             // 
             // gridView1
             // 
-            gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] { colOrderID, colContactName, colAddress, colPostalCode, colCity, colPhone, colOrderDate });
+            gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] { colOrderID, colContactName, colAddress, colPostalCode, colCity, colCountry, colPhone, colOrderDate });
             gridView1.GridControl = gridControl1;
             gridView1.Name = "gridView1";
-            // 
-            // colOrderID
-            // 
-            colOrderID.FieldName = "OrderID";
-            colOrderID.MinWidth = 25;
-            colOrderID.Name = "colOrderID";
-            resources.ApplyResources(colOrderID, "colOrderID");
-            // 
-            // colContactName
-            // 
-            colContactName.FieldName = "ContactName";
-            colContactName.MinWidth = 25;
-            colContactName.Name = "colContactName";
-            resources.ApplyResources(colContactName, "colContactName");
-            // 
-            // colAddress
-            // 
-            colAddress.FieldName = "Address";
-            colAddress.MinWidth = 25;
-            colAddress.Name = "colAddress";
-            resources.ApplyResources(colAddress, "colAddress");
-            // 
-            // colPostalCode
-            // 
-            colPostalCode.FieldName = "PostalCode";
-            colPostalCode.MinWidth = 25;
-            colPostalCode.Name = "colPostalCode";
-            resources.ApplyResources(colPostalCode, "colPostalCode");
-            // 
-            // colCity
-            // 
-            resources.ApplyResources(colCity, "colCity");
-            colCity.FieldName = "City";
-            colCity.MinWidth = 25;
-            colCity.Name = "colCity";
-            // 
-            // colPhone
-            // 
-            colPhone.FieldName = "Phone";
-            colPhone.MinWidth = 25;
-            colPhone.Name = "colPhone";
-            resources.ApplyResources(colPhone, "colPhone");
-            // 
-            // colOrderDate
-            // 
-            colOrderDate.FieldName = "OrderDate";
-            colOrderDate.MinWidth = 25;
-            colOrderDate.Name = "colOrderDate";
-            resources.ApplyResources(colOrderDate, "colOrderDate");
             // 
             // btnPrint
             // 
@@ -274,6 +226,62 @@
             emptySpaceItem2.Size = new System.Drawing.Size(426, 26);
             emptySpaceItem2.TextSize = new System.Drawing.Size(0, 0);
             // 
+            // colOrderID
+            // 
+            colOrderID.FieldName = "OrderID";
+            colOrderID.MinWidth = 25;
+            colOrderID.Name = "colOrderID";
+            resources.ApplyResources(colOrderID, "colOrderID");
+            // 
+            // colContactName
+            // 
+            colContactName.FieldName = "ContactName";
+            colContactName.MinWidth = 25;
+            colContactName.Name = "colContactName";
+            resources.ApplyResources(colContactName, "colContactName");
+            // 
+            // colAddress
+            // 
+            colAddress.FieldName = "Address";
+            colAddress.MinWidth = 25;
+            colAddress.Name = "colAddress";
+            resources.ApplyResources(colAddress, "colAddress");
+            // 
+            // colPostalCode
+            // 
+            colPostalCode.FieldName = "PostalCode";
+            colPostalCode.MinWidth = 25;
+            colPostalCode.Name = "colPostalCode";
+            resources.ApplyResources(colPostalCode, "colPostalCode");
+            // 
+            // colCity
+            // 
+            colCity.FieldName = "City";
+            colCity.MinWidth = 25;
+            colCity.Name = "colCity";
+            resources.ApplyResources(colCity, "colCity");
+            // 
+            // colCountry
+            // 
+            colCountry.FieldName = "Country";
+            colCountry.MinWidth = 25;
+            colCountry.Name = "colCountry";
+            resources.ApplyResources(colCountry, "colCountry");
+            // 
+            // colPhone
+            // 
+            colPhone.FieldName = "Phone";
+            colPhone.MinWidth = 25;
+            colPhone.Name = "colPhone";
+            resources.ApplyResources(colPhone, "colPhone");
+            // 
+            // colOrderDate
+            // 
+            colOrderDate.FieldName = "OrderDate";
+            colOrderDate.MinWidth = 25;
+            colOrderDate.Name = "colOrderDate";
+            resources.ApplyResources(colOrderDate, "colOrderDate");
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -327,6 +335,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn colAddress;
         private DevExpress.XtraGrid.Columns.GridColumn colPostalCode;
         private DevExpress.XtraGrid.Columns.GridColumn colCity;
+        private DevExpress.XtraGrid.Columns.GridColumn colCountry;
         private DevExpress.XtraGrid.Columns.GridColumn colPhone;
         private DevExpress.XtraGrid.Columns.GridColumn colOrderDate;
     }

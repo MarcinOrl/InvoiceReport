@@ -193,9 +193,6 @@
   <data name="colPostalCode.Width" type="System.Int32, mscorlib">
     <value>94</value>
   </data>
-  <data name="colCity.Caption" xml:space="preserve">
-    <value>City</value>
-  </data>
   <data name="colCity.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -205,11 +202,20 @@
   <data name="colCity.Width" type="System.Int32, mscorlib">
     <value>94</value>
   </data>
+  <data name="colCountry.Visible" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="colCountry.VisibleIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="colCountry.Width" type="System.Int32, mscorlib">
+    <value>94</value>
+  </data>
   <data name="colPhone.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="colPhone.VisibleIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="colPhone.Width" type="System.Int32, mscorlib">
     <value>94</value>
@@ -218,7 +224,7 @@
     <value>True</value>
   </data>
   <data name="colOrderDate.VisibleIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="colOrderDate.Width" type="System.Int32, mscorlib">
     <value>94</value>
@@ -395,48 +401,6 @@
   <data name="&gt;&gt;gridView1.Type" xml:space="preserve">
     <value>DevExpress.XtraGrid.Views.Grid.GridView, DevExpress.XtraGrid.v23.1, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
-  <data name="&gt;&gt;colOrderID.Name" xml:space="preserve">
-    <value>colOrderID</value>
-  </data>
-  <data name="&gt;&gt;colOrderID.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.1, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;colContactName.Name" xml:space="preserve">
-    <value>colContactName</value>
-  </data>
-  <data name="&gt;&gt;colContactName.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.1, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;colAddress.Name" xml:space="preserve">
-    <value>colAddress</value>
-  </data>
-  <data name="&gt;&gt;colAddress.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.1, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;colPostalCode.Name" xml:space="preserve">
-    <value>colPostalCode</value>
-  </data>
-  <data name="&gt;&gt;colPostalCode.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.1, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;colCity.Name" xml:space="preserve">
-    <value>colCity</value>
-  </data>
-  <data name="&gt;&gt;colCity.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.1, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;colPhone.Name" xml:space="preserve">
-    <value>colPhone</value>
-  </data>
-  <data name="&gt;&gt;colPhone.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.1, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
-  <data name="&gt;&gt;colOrderDate.Name" xml:space="preserve">
-    <value>colOrderDate</value>
-  </data>
-  <data name="&gt;&gt;colOrderDate.Type" xml:space="preserve">
-    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.1, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
-  </data>
   <data name="&gt;&gt;Root.Name" xml:space="preserve">
     <value>Root</value>
   </data>
@@ -484,6 +448,54 @@
   </data>
   <data name="&gt;&gt;emptySpaceItem2.Type" xml:space="preserve">
     <value>DevExpress.XtraLayout.EmptySpaceItem, DevExpress.XtraLayout.v23.1, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;colOrderID.Name" xml:space="preserve">
+    <value>colOrderID</value>
+  </data>
+  <data name="&gt;&gt;colOrderID.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.1, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;colContactName.Name" xml:space="preserve">
+    <value>colContactName</value>
+  </data>
+  <data name="&gt;&gt;colContactName.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.1, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;colAddress.Name" xml:space="preserve">
+    <value>colAddress</value>
+  </data>
+  <data name="&gt;&gt;colAddress.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.1, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;colPostalCode.Name" xml:space="preserve">
+    <value>colPostalCode</value>
+  </data>
+  <data name="&gt;&gt;colPostalCode.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.1, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;colCity.Name" xml:space="preserve">
+    <value>colCity</value>
+  </data>
+  <data name="&gt;&gt;colCity.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.1, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;colCountry.Name" xml:space="preserve">
+    <value>colCountry</value>
+  </data>
+  <data name="&gt;&gt;colCountry.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.1, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;colPhone.Name" xml:space="preserve">
+    <value>colPhone</value>
+  </data>
+  <data name="&gt;&gt;colPhone.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.1, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;colOrderDate.Name" xml:space="preserve">
+    <value>colOrderDate</value>
+  </data>
+  <data name="&gt;&gt;colOrderDate.Type" xml:space="preserve">
+    <value>DevExpress.XtraGrid.Columns.GridColumn, DevExpress.XtraGrid.v23.1, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Form1</value>

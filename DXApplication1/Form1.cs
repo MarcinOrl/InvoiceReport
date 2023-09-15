@@ -47,7 +47,7 @@ namespace DXApplication1
             {
                 if (db.State == ConnectionState.Closed)
                     db.Open();
-                string query = "select o.OrderID, c.CustomerID, c.ContactName, c.Address, c.PostalCode, c.City, c.Phone, o.OrderDate" + " from Orders o inner join Customers c on o.CustomerID = c.CustomerID" + $" where o.OrderDate between convert(varchar(25),'{dtFromDate.EditValue}',103) and convert(varchar(25), '{dtToDate.EditValue}',103)";
+                string query = "select o.OrderID, c.CustomerID, c.ContactName, c.Address, c.PostalCode, c.City, c.Country, c.Phone, o.OrderDate" + " from Orders o inner join Customers c on o.CustomerID = c.CustomerID" + $" where o.OrderDate between convert(varchar(25),'{dtFromDate.EditValue}',103) and convert(varchar(25), '{dtToDate.EditValue}',103)";
                 ordersBindingSource.DataSource = db.Query<Orders>(query, commandType: CommandType.Text);
             }
         }

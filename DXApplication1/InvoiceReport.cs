@@ -16,7 +16,7 @@ namespace DXApplication1
             InitializeComponent();
         }
 
-        public void InitData(string orderid, DateTime orderdate, string customer, string address, string postalcode, string city, string phone, List<OrderDetail> data)
+        public void InitData(string orderid, DateTime orderdate, string customer, string address, string postalcode, string city, string country, string phone, List<OrderDetail> data)
         {
             pOrderID.Value = orderid;
             pDate.Value = orderdate.Date;
@@ -24,6 +24,7 @@ namespace DXApplication1
             pAddress.Value = address;
             pPostalCode.Value = postalcode;
             pCity.Value = city;
+            pCountry.Value = country;
             pPhone.Value = phone;
             objectDataSource1.DataSource = data;
         }

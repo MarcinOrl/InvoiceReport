@@ -16,9 +16,11 @@ namespace DXApplication1
         [Display(Name = "Contact Name")]
         public string ContactName { get; set; }
         public string Address { get; set; }
-        public string PostalCode { get; set; }
         [Display(Name = "Postal Code")]
+        public string PostalCode { get; set; }
+        [Display(Name = "City")]
         public string City { get; set; }
+        public string Country { get; set; }
         public string Phone { get; set; }
         public DateTime OrderDate { get; set; }
 
