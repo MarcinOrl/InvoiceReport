@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
@@ -96,33 +97,24 @@
             layoutControl1.Controls.Add(btnPrint);
             layoutControl1.Controls.Add(btnLoad);
             layoutControl1.Controls.Add(dtFromDate);
-            layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            layoutControl1.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(layoutControl1, "layoutControl1");
             layoutControl1.Name = "layoutControl1";
             layoutControl1.Root = Root;
-            layoutControl1.Size = new System.Drawing.Size(815, 448);
-            layoutControl1.TabIndex = 0;
-            layoutControl1.Text = "layoutControl1";
             // 
             // dtToDate
             // 
-            dtToDate.EditValue = null;
-            dtToDate.Location = new System.Drawing.Point(261, 12);
+            resources.ApplyResources(dtToDate, "dtToDate");
             dtToDate.Name = "dtToDate";
-            dtToDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
-            dtToDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
-            dtToDate.Size = new System.Drawing.Size(116, 22);
+            dtToDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton((DevExpress.XtraEditors.Controls.ButtonPredefines)resources.GetObject("dtToDate.Properties.Buttons")) });
+            dtToDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton((DevExpress.XtraEditors.Controls.ButtonPredefines)resources.GetObject("dtToDate.Properties.CalendarTimeProperties.Buttons")) });
             dtToDate.StyleController = layoutControl1;
-            dtToDate.TabIndex = 2;
             // 
             // gridControl1
             // 
             gridControl1.DataSource = ordersBindingSource;
-            gridControl1.Location = new System.Drawing.Point(12, 38);
+            resources.ApplyResources(gridControl1, "gridControl1");
             gridControl1.MainView = gridView1;
             gridControl1.Name = "gridControl1";
-            gridControl1.Size = new System.Drawing.Size(791, 367);
-            gridControl1.TabIndex = 3;
             gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] { gridView1 });
             // 
             // ordersBindingSource
@@ -140,95 +132,71 @@
             colOrderID.FieldName = "OrderID";
             colOrderID.MinWidth = 25;
             colOrderID.Name = "colOrderID";
-            colOrderID.Visible = true;
-            colOrderID.VisibleIndex = 0;
-            colOrderID.Width = 94;
+            resources.ApplyResources(colOrderID, "colOrderID");
             // 
             // colContactName
             // 
             colContactName.FieldName = "ContactName";
             colContactName.MinWidth = 25;
             colContactName.Name = "colContactName";
-            colContactName.Visible = true;
-            colContactName.VisibleIndex = 1;
-            colContactName.Width = 94;
+            resources.ApplyResources(colContactName, "colContactName");
             // 
             // colAddress
             // 
             colAddress.FieldName = "Address";
             colAddress.MinWidth = 25;
             colAddress.Name = "colAddress";
-            colAddress.Visible = true;
-            colAddress.VisibleIndex = 2;
-            colAddress.Width = 94;
+            resources.ApplyResources(colAddress, "colAddress");
             // 
             // colPostalCode
             // 
             colPostalCode.FieldName = "PostalCode";
             colPostalCode.MinWidth = 25;
             colPostalCode.Name = "colPostalCode";
-            colPostalCode.Visible = true;
-            colPostalCode.VisibleIndex = 3;
-            colPostalCode.Width = 94;
+            resources.ApplyResources(colPostalCode, "colPostalCode");
             // 
             // colCity
             // 
-            colCity.Caption = "City";
+            resources.ApplyResources(colCity, "colCity");
             colCity.FieldName = "City";
             colCity.MinWidth = 25;
             colCity.Name = "colCity";
-            colCity.Visible = true;
-            colCity.VisibleIndex = 4;
-            colCity.Width = 94;
             // 
             // colPhone
             // 
             colPhone.FieldName = "Phone";
             colPhone.MinWidth = 25;
             colPhone.Name = "colPhone";
-            colPhone.Visible = true;
-            colPhone.VisibleIndex = 5;
-            colPhone.Width = 94;
+            resources.ApplyResources(colPhone, "colPhone");
             // 
             // colOrderDate
             // 
             colOrderDate.FieldName = "OrderDate";
             colOrderDate.MinWidth = 25;
             colOrderDate.Name = "colOrderDate";
-            colOrderDate.Visible = true;
-            colOrderDate.VisibleIndex = 6;
-            colOrderDate.Width = 94;
+            resources.ApplyResources(colOrderDate, "colOrderDate");
             // 
             // btnPrint
             // 
-            btnPrint.Location = new System.Drawing.Point(601, 409);
+            resources.ApplyResources(btnPrint, "btnPrint");
             btnPrint.Name = "btnPrint";
-            btnPrint.Size = new System.Drawing.Size(99, 27);
             btnPrint.StyleController = layoutControl1;
-            btnPrint.TabIndex = 4;
-            btnPrint.Text = "Drukuj";
             btnPrint.Click += btnPrint_Click;
             // 
             // btnLoad
             // 
-            btnLoad.Location = new System.Drawing.Point(704, 409);
+            resources.ApplyResources(btnLoad, "btnLoad");
             btnLoad.Name = "btnLoad";
-            btnLoad.Size = new System.Drawing.Size(99, 27);
             btnLoad.StyleController = layoutControl1;
-            btnLoad.TabIndex = 5;
-            btnLoad.Text = "Załaduj dane";
             btnLoad.Click += btnLoad_Click;
             // 
             // dtFromDate
             // 
-            dtFromDate.EditValue = null;
-            dtFromDate.Location = new System.Drawing.Point(73, 12);
+            resources.ApplyResources(dtFromDate, "dtFromDate");
             dtFromDate.Name = "dtFromDate";
-            dtFromDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
-            dtFromDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo) });
-            dtFromDate.Size = new System.Drawing.Size(123, 22);
+            dtFromDate.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton((DevExpress.XtraEditors.Controls.ButtonPredefines)resources.GetObject("dtFromDate.Properties.Buttons")) });
+            dtFromDate.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] { new DevExpress.XtraEditors.Controls.EditorButton((DevExpress.XtraEditors.Controls.ButtonPredefines)resources.GetObject("dtFromDate.Properties.CalendarTimeProperties.Buttons")) });
             dtFromDate.StyleController = layoutControl1;
-            dtFromDate.TabIndex = 0;
             // 
             // Root
             // 
@@ -245,7 +213,7 @@
             dateEdit1.Location = new System.Drawing.Point(0, 0);
             dateEdit1.Name = "dateEdit1";
             dateEdit1.Size = new System.Drawing.Size(188, 26);
-            dateEdit1.Text = "Data od:";
+            resources.ApplyResources(dateEdit1, "dateEdit1");
             dateEdit1.TextSize = new System.Drawing.Size(49, 16);
             // 
             // layoutControlItem2
@@ -295,7 +263,7 @@
             dateEdit2.Location = new System.Drawing.Point(188, 0);
             dateEdit2.Name = "dateEdit2";
             dateEdit2.Size = new System.Drawing.Size(181, 26);
-            dateEdit2.Text = "Data do:";
+            resources.ApplyResources(dateEdit2, "dateEdit2");
             dateEdit2.TextSize = new System.Drawing.Size(49, 16);
             // 
             // emptySpaceItem2
@@ -308,14 +276,10 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(815, 448);
             Controls.Add(layoutControl1);
-            Margin = new System.Windows.Forms.Padding(4);
             Name = "Form1";
-            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            Text = "Druk faktur";
             ((System.ComponentModel.ISupportInitialize)layoutControlItem6).EndInit();
             ((System.ComponentModel.ISupportInitialize)layoutControlItem5).EndInit();
             ((System.ComponentModel.ISupportInitialize)layoutControl1).EndInit();
