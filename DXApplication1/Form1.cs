@@ -9,14 +9,20 @@ using System.Windows.Forms;
 using System.Configuration;
 using System.Data.SqlClient;
 using Dapper;
+using DevExpress.XtraExport.Helpers;
+using DevExpress.XtraSpreadsheet.Forms;
+using System.Security.Cryptography.X509Certificates;
 
 namespace DXApplication1
 {
     public partial class Form1 : DevExpress.XtraEditors.XtraForm
     {
+        public bool grouped = false;
+
         public Form1()
         {
             InitializeComponent();
+
         }
 
         private void btnPrint_Click(object sender, EventArgs e)
@@ -50,6 +56,26 @@ namespace DXApplication1
                 string query = "select o.OrderID, c.CustomerID, c.ContactName, c.Address, c.PostalCode, c.City, c.Country, c.Phone, o.OrderDate" + " from Orders o inner join Customers c on o.CustomerID = c.CustomerID" + $" where o.OrderDate between convert(varchar(25),'{dtFromDate.EditValue}',103) and convert(varchar(25), '{dtToDate.EditValue}',103)";
                 ordersBindingSource.DataSource = db.Query<Orders>(query, commandType: CommandType.Text);
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            if (grouped)
+            {
+                colCustomerID.UnGroup();
+                grouped = false;
+            }
+            else
+            {
+                colCustomerID.Group();
+                grouped = true;
+            }
+
         }
     }
 }
